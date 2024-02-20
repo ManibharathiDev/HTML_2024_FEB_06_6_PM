@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Registration</title>
+    </head>
+    <body>
+        <form action="home.html" method="post">
+            <table>
+                <tr>
+                    <td><label>Enter your name</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="myname"/></td>
+                </tr>
+
+                <tr>
+                    <td><label>Enter your age</label></td>
+                    <td>:</td>
+                    <td><input type="number" name="myage"/></td>
+                </tr>
+
+                <tr>
+                    <td><label>Date of Birth</label></td>
+                    <td>:</td>
+                    <td><input type="date" name="mydateofbirth"/></td>
+                </tr>
+
+                <tr>
+                    <td> <label>Time</label></td>
+                    <td>:</td>
+                    <td><input type="time" name="mytime"/>   </td>
+                </tr>
+
+                <tr>
+                    <td><label>Date Time</label></td>
+                    <td>:</td>
+                    <td><input type="datetime-local" name="mydatetime"/> </td>
+                </tr>
+
+                <tr>
+                    <td><label>Address</label></td>
+                    <td>:</td>
+                    <td>
+                        <textarea rows="5" name="myaddress"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>:</td>
+                    <td>
+                        <label><input type="radio" name="tamil"/> Male</label>
+                        <label><input type="radio" name="tamil"/> Female</label>
+                        <label><input type="radio" name="tamil"/> Transgender</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>:</td>
+                    <td>
+
+                        <label><input type="checkbox" name="myHobbies"/>Playing Cricket</label>
+                        <label><input type="checkbox" name="myHobbies"/>Reading Books</label>
+                        <label><input type="checkbox" name="myHobbies"/>Watching Webseries</label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td>:</td>
+                    <td>
+
+                        <select name="myState">
+                            <option>Tamil Nadu</option>
+                            <option>Kerala</option>
+                            <option>Telungana</option>
+                            <option>Pondycheri</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload your resume</td>
+                    <td>:</td>
+                    <td>
+                        <input type="file" multiple name="myResume"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" value="Click Me"/>
+                    </td>
+                </tr>    
+                <tr><td> <input type="submit" value="Submit"/></td>
+                <tr><td>  <input type="reset" value="Clear"/></td></tr>
+                    
+              
+
+            </table>
+
+        </form>
+    </body>
+</html>
