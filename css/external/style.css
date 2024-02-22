@@ -1,0 +1,44 @@
+h1
+            {
+                background-color: blue;
+                color: rgb(234, 232, 232);
+                padding: 10px;
+                margin: 10px;
+            }
+            h2
+            {
+                background-color: rgb(237, 146, 9);
+                color: rgb(234, 232, 232);
+                padding: 10px;
+                margin: 10px;
+                font-size: 35px;
+            }
+            .address{
+                background-color: rgb(237, 146, 9);
+                color: rgb(234, 232, 232);
+                padding: 10px;
+                margin: 10px;
+                font-size: 35px;
+            }
+            .addFontSize{
+                font-size: 45px;
+                font-weight: bolder;
+            }
+
+            #myHeading{
+                font-size: 45px;
+                font-weight: bolder;
+                background-color: chartreuse;
+                -webkit-border-radius: 25px;
+                -moz-border-radius: 25px;
+                border-radius: 25px;
+                -webkit-box-shadow: -2px 5px 31px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 5px 31px -4px rgba(0,0,0,0.75);
+box-shadow: -2px 5px 31px -4px rgba(0,0,0,0.75);
+            }
+
+            .govt{
+                background-color: black;
+                padding: 10px;
+                color: white;
+            }
