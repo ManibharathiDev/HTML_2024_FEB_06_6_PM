@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(228, 239, 241);
+}
+
+.headerLeft{
+    background-color: coral;
+    /* height: 100px; */
+    height: auto;
+    width:50%;
+    float: left;
+}
+
+.headerRight{
+    background-color: rgb(69, 1, 54);
+    height: auto;
+    width:40%;
+    float: left;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 16px;
+    margin-left: 16px;
+}
+
