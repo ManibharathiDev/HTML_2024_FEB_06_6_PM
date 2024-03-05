@@ -166,3 +166,71 @@ color: #000000;
     display: block;
 }
 
+.sideCall{
+    width:250px;
+    height:50px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    right: -100px;
+    top:250px;
+    position: fixed;
+    transform: rotate(-90deg);
+}
+.sideCall a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+}
+
+.bottomCall{
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 0;
+    -webkit-box-shadow: -1px 3px 17px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 3px 17px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 3px 17px 0px rgba(0,0,0,0.75);
+
+}
+
+.bottomWhatsapp{
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index :1;
+}
+
+.footer{
+    
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #afacac;
+    border-bottom: 5px solid #FF0000;
+}
+
