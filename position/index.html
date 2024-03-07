@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Position
+        </title>
+        <style type="text/css">
+            .box{
+                width: 250px;
+                height: 250px;
+                background-color: red;
+                display: inline-block;
+                border: 2px dotted black;
+            }
+
+            .parent{
+                height: auto;
+                border: 2px dotted black;
+            }
+
+            #blue{
+                background-color: blue;
+                position: relative;
+                top: 50px;
+                left: 20px;
+            }
+
+            #yellow{
+                background-color: yellow;
+                position: absolute;
+                top:20px;
+                left:20px;
+            }
+
+            #statics{
+                background-color: rgb(7, 96, 186);
+                position: static;
+                top:20px;
+                left:20px;
+            }
+
+            #fixeds{
+                background-color: rgb(6, 230, 88);
+                position: fixed;
+                top:20px;
+                left:20px;
+            }
+
+            #stickys{
+                background-color: rgb(236, 3, 174);
+                position: sticky;
+                top:0px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Sticky</h1>
+    <div class="parent" id="stickys">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <h1>Relative</h1>
+    <div class="parent">
+        <div class="box"></div>
+        <div class="box" id="blue"></div>
+        <div class="box"></div>
+    </div>
+
+    <h1>Absolute</h1>
+    <div class="parent">
+        <div class="box"></div>
+        <div class="box" id="yellow"></div>
+        <div class="box"></div>
+    </div>
+
+    <h1>Static - Normal Flow</h1>
+    <div class="parent">
+        <div class="box"></div>
+        <div class="box" id="statics"></div>
+        <div class="box"></div>
+    </div>
+
+    <h1>Fixed</h1>
+    <div class="parent">
+        <div class="box"></div>
+        <div class="box" id="fixeds"></div>
+        <div class="box"></div>
+    </div>
+</body>
+    
+</html>
