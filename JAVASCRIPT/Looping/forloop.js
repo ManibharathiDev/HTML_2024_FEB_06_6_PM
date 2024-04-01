@@ -41,12 +41,51 @@ for(var i = 1; i<=10; i++)
     //console.log(i+" Power 2 ="+result);
 }
 
+// for(var i = 1; i<=5; i++)
+// {
+//     for(var j = 1; j<2; j++)
+//     {
+//         for(var k = 1; k<2; k++)
+//         {
+//             console.log("i -"+i);
+//         }
+//     } 
+// }
+
 for(var i = 1; i<=5; i++)
 {
-    for(var j = 1; j<2; j++)
+    for(var j = 1; j<=i; j++)
     {
-        console.log("j - "+j);
+        for(var k = i; k<=j; k++)
+        {
+            console.log(k);
+        }
     }
-    console.log("i -"+i);
 }
+
+// 1
+// 1
+// 2
+// 2
+// 3
+// 3
+//-----------
+// 1
+// 1
+// 2
+// 1
+// 3
+// 1
+// 4
+// 1
+// 5
+// 1
+
+// 1
+// 2
+// 3
+// 4
+// 5
+// 1
+
 
