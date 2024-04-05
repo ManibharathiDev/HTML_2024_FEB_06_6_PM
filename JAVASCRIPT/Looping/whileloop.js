@@ -43,3 +43,14 @@ while(k<=n) //1<=5 //2<=5 //3<=5 // 4<=5 //5<=5 // 6<=5
     k = k+2; //k = k+1 .1+1 = 2; ; k=2+1 = 3; k= 3+1=4; k=4+1 = 5; k= 5+1 = 6
 }
 console.log("Sum of Odd Number is",sum);
+
+// Sum of the digit
+// N = 123
+// 1+2+3 => 6
+
+// N = 489
+// 4+8+9 => 
+
+// Reverse the digit
+// N  152
+// 251
