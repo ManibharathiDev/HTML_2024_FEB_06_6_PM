@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+
+        <form>
+            <table>
+                <tr>
+                    <td>First Number</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="firstNumber"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Second Number</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="secondNumber"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Result</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="result"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="add()" type="button">Add</button></td>
+                </tr>
+            </table>
+        </form>
+
+        <script type="text/javascript">
+                function add()
+                {
+                    //alert("It is called");
+                    var first = document.getElementById("firstNumber").value;
+                    var second = document.getElementById("secondNumber").value;
+                    var answer = parseInt(first)+parseInt(second);
+                    document.getElementById("result").value = answer;
+
+                }
+        </script>
+    </body>
+</html>

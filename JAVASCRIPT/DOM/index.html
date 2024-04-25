@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Examples</title>
+        <style type="text/css">
+
+        </style>
+    </head>
+    <body>
+        <h1 id="heading">My First DOM Examples</h1>
+        <button onclick="changeContent()">Click to change</button>
+
+        <h2 id="counts">0</h2>
+        <button onclick="addCount()">Increment</button>
+
+        <h1 class="nums">0</h1>
+        <button onclick="clickME()">Click To Add</button>
+
+        <!-- Javascript Declaration -->
+        <script type="text/javascript">
+                //alert("Hey Developers!"); //Display prompt messages
+            //document.getElementById("heading").innerText = "Hello There!";
+
+            function clickME()
+            {
+                //document.getElementsByClassName("nums").innerHTML = "100";
+                document.getElementsByTagName("h1").innerText = "Welcome you all!";
+            }
+
+            function changeContent()
+            {
+                //document.getElementById("heading").innerText = "Hello There!";
+                document.getElementById("heading").innerHTML ="<h2>I am there</h2>";
+                //document.getElementsByTagName("h1").innerText = "Welcome you all!";
+            }
+            var start = 0;
+            function addCount()
+            {
+                document.getElementById("counts").innerText = ++start;
+            }
+
+        </script>
+    </body>
+</html>
