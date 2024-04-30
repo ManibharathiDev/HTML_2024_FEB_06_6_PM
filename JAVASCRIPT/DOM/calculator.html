@@ -43,12 +43,22 @@
         <script type="text/javascript">
                 function add()
                 {
+                    document.getElementById("result").value = "";
                     //alert("It is called");
                     var first = document.getElementById("firstNumber").value;
                     var second = document.getElementById("secondNumber").value;
-                    var answer = parseInt(first)+parseInt(second);
-                    document.getElementById("result").value = answer;
-
+                    if(first.length == 0)
+                    {
+                        alert("Please enter the first number");
+                    }
+                    else if(second.length == 0)
+                    {
+                        alert("Please enter the second number");
+                    }
+                    else{
+                        var answer = parseInt(first)+parseInt(second);
+                        document.getElementById("result").value = answer;
+                    }
                 }
         </script>
     </body>
