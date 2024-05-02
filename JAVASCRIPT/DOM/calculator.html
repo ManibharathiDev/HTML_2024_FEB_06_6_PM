@@ -15,6 +15,9 @@
                     <td>
                         <input type="text" id="firstNumber"/>
                     </td>
+                    <td>
+                        <img src="tick.png" id="firstSuccess" width="10px"/>
+                    </td>
                 </tr>
 
                 <tr>
@@ -23,6 +26,9 @@
                 <tr>
                     <td>
                         <input type="text" id="secondNumber"/>
+                    </td>
+                    <td>
+                        <img src="tick.png" id="secondSuccess" width="10px"/>
                     </td>
                 </tr>
 
@@ -41,24 +47,50 @@
         </form>
 
         <script type="text/javascript">
+
+                    document.getElementById("firstSuccess").style.display= "none";
+                    document.getElementById("secondSuccess").style.display = 'none';
+
                 function add()
                 {
+                    document.getElementById("firstNumber").style.borderColor = 'black';
+                    document.getElementById("secondNumber").style.borderColor = 'black';
                     document.getElementById("result").value = "";
+
+                    
+
                     //alert("It is called");
                     var first = document.getElementById("firstNumber").value;
                     var second = document.getElementById("secondNumber").value;
+                    let isValid = true;
                     if(first.length == 0)
                     {
-                        alert("Please enter the first number");
-                    }
-                    else if(second.length == 0)
-                    {
-                        alert("Please enter the second number");
+                        //alert("Please enter the first number");
+                        document.getElementById("firstNumber").style.borderColor = 'red';
+                        isValid = false;
                     }
                     else{
-                        var answer = parseInt(first)+parseInt(second);
-                        document.getElementById("result").value = answer;
+                        document.getElementById("firstNumber").style.borderColor = 'green';
+                        document.getElementById("firstSuccess").style.display= "block";
                     }
+
+                    if(second.length == 0)
+                    {
+                        //alert("Please enter the second number");
+                        document.getElementById("secondNumber").style.borderColor = 'red';
+                        isValid = false;
+                    }
+                    else{
+                        document.getElementById("secondNumber").style.borderColor = 'green';
+                        document.getElementById("secondSuccess").style.display= "block";
+                    }
+                    
+                    if(isValid)
+                    {
+                            var answer = parseInt(first)+parseInt(second);
+                            document.getElementById("result").value = answer;
+                    }
+                    
                 }
         </script>
     </body>

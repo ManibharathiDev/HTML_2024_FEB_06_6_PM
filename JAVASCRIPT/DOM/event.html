@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Events</title>
+    </head>
+    <body>
+        <input type="text" onkeypress="return isNumberKey(event);" id="myName" onclick="clickMe()" onblur="blurMe()">
+        <br/>
+        <br/>
+        <input type="text" id="myNewName" >
+    </body>
+    <script type="text/javascript">
+
+        function getData(id)
+        {
+            console.log("text",id.value);
+        }
+
+        function isNumberKey(evt){
+
+                console.log(evt);
+
+                var charCode = (evt.which) ? evt.which : evt.keyCode
+
+                //a = 97 z= 122
+                //A = 65 Z = 90
+
+                if((charCode >=65 && charCode <= 122) || (charCode >= 97 && charCode <=122))
+                {
+                    return true;
+                }
+                return false;
+
+                if(charCode >=48 && charCode <=57)
+                {
+                    return true;
+                }
+                return false;
+
+                //return !(charCode > 31 && (charCode < 48 || charCode > 57));
+            }
+
+        function clickMe()
+        {
+            //alert('You clicked me!');
+            document.getElementById("myName").style.backgroundColor = "red";
+        }
+
+        function focusMe()
+        {
+            //alert("You focused me!");
+        }
+
+        function blurMe()
+        {
+            //alert("You blurred me!");
+            let data = document.getElementById("myName").value;
+            document.getElementById("myNewName").value = data;
+            document.getElementById("myName").style.backgroundColor = "green";
+        }
+
+    </script>
+</html>
