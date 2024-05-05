@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Node Traversing</title>
+    </head>
+    <body>
+        <div id="myData">
+                <div id="child">Welcome Data</div>
+        </div>
+        <button onclick="addData()">Add here</button>
+
+        <button onclick="removeData()">Remove Child</button>
+
+        <button onclick="removeAll()">Remove All</button>
+    </body>
+    <script type="text/javascript">
+
+        function removeAll(){
+            let parent = document.getElementById("myData");
+            parent.remove();
+        }
+
+        function removeData()
+        {
+            /**
+             * Remove Child
+             **/
+             let parent = document.getElementById("myData");
+            let child = document.getElementById("child");
+            console.log(parent.childNodes.length)
+            if(parent.parentNode)
+            {
+                
+                parent.removeChild(child);
+            }
+        }
+
+        function addData()
+        {
+            // let first = document.createElement("h1");
+            // first.innerText="Welcome Guyz";
+            // let data = document.getElementById("myData");
+            // data.appendChild(first);
+
+            /**
+             * Create Text Node
+             **/
+            const h1 = document.createElement("H1");
+            const textNode = document.createTextNode("Qtree Tech");
+            h1.setAttribute("class","textNew");
+            h1.appendChild(textNode);
+            document.body.appendChild(h1);
+                
+
+            
+        }
+    </script>
+</html>

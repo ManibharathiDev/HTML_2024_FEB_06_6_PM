@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM - Node</title>
+        <style type="text/css">
+            .heading{
+                color: red;
+            }
+            .newClass{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+            <p>Welcome you all!</p>
+            <h1 class="heading">Qtree Tech</h1>
+        </div>
+        <input type="button" value="Add New" onclick="addChild()"/>
+        <div id="newParent" class="newClass">
+            Technology
+        </div>
+        <input type="button" value="Remove Attribute" onclick="removeAttributes()"/>
+        
+        <div id="secondParent">
+            <h1 id="firstChild">First Child</h1>
+            <h1 id="secondChild">Second Child</h1>
+        </div>
+
+        <input type="button" value="Remove All" onclick="removeContent()"/>
+        <input type="button" value="Remove All Child" onclick="removeAllContent()"/>
+    </body>
+    <script type="text/javascript">
+
+        function removeAllContent()
+        {
+            let parent = document.getElementById("secondParent");
+            let child = document.getElementById("firstChild");
+            parent.removeChild(child);
+        }
+
+        function removeContent()
+        {
+            let parent = document.getElementById("secondParent");
+            parent.remove();
+        }
+
+        function removeAttributes()
+        {
+            let data = document.getElementById("newParent");
+            data.removeAttribute("class");
+        }
+
+        function addChild()
+        {
+            let heading = document.createElement("h1");
+            heading.setAttribute("class","heading");
+            heading.setAttribute("id","newData");
+            //heading.style.color ="red";
+            let hContent = document.createTextNode("Qtree");
+            heading.appendChild(hContent);
+
+            let parent = document.getElementById("parent");
+            parent.appendChild(heading);
+
+            let child = document.createElement("p");
+            let content = document.createTextNode("Welcome you all!");
+            child.appendChild(content);
+            
+            parent.appendChild(child)
+
+            
+        }
+    </script>
+</html>
