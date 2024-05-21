@@ -12,15 +12,12 @@ function App(){
   // let[variableName,setMethod] = useState(initialState)
   let [count,setCount] = useState(0);
 
-  let [data,setData] = useState("Kavi")
 
   function changeCount()
   {
     let value = count+1;
     setCount(value);
-    console.log("Count",count);
-    let name = "Harshan-"+count;
-    setData(name);
+   
   }
 
   return(
@@ -36,13 +33,6 @@ function App(){
       <button onClick={()=>changeCount()}>
         Change Count
       </button>
-
-      {
-        data
-      }
-
-
-      
     </>
 );
 }
