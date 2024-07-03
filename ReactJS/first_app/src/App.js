@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/header';
 import Footer from './components/footer';
 import { useState } from 'react'; // State Import
+import Website from './website';
 
 function App(){
 
@@ -30,7 +31,7 @@ function App(){
 
   return(
     <div>
-      <Header title="Kavibharathi" priority="high"/>
+      {/* <Header title="Kavibharathi" priority="high"/>
       <Header title="Qtree Tech" priority="low"/>
         Hello, {myName} - {count}
         <button onClick={changeCount}>Change Count</button>
@@ -38,7 +39,8 @@ function App(){
             {multiply}
           </div>
           <button onClick={secondTable}>Multiply</button>
-        <Footer callback={printMyName}/>
+        <Footer callback={printMyName}/> */}
+        <Website/>
       </div>
   )
 }

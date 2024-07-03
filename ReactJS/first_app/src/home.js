@@ -5,7 +5,7 @@ import User from "./components/user";
 
 const Home = () =>{
 
-    let role = "user"
+    let role = "super_admin"
     if(role == "super_admin")
         {
             return(
