@@ -7,6 +7,7 @@ import Kavi from './kavi';
 import MyButton from './mybutton';
 import Home from './home'
 import Website from './website';
+import MyHome from './myhome';
 
 //let heading = <h1>Welcome Qtree Technology<span>-welcome</span></h1>;
 //let heading = React.createElement('h1',{},"Qtree Tech");
@@ -33,7 +34,7 @@ let myText = <h1>{value}</h1>
 // heading.append(subHeading);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 //root.render(myText);
-root.render(<Website/>);
+root.render(<MyHome/>);
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(

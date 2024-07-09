@@ -1,5 +1,6 @@
 import Child from "./child";
 import MyForm from "./myform";
+import { Link } from 'react-router-dom';
 const WebMain = () => {
 
     const my_hobbies = ['Jocking','Reading',"Riding","Surfing"];
@@ -11,6 +12,11 @@ const WebMain = () => {
     ];
     return(
         <div>
+
+            {/* <a href="#">Home</a> */}
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/service">Services</Link>
 
 <MyForm/>
 
