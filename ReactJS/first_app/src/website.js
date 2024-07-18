@@ -1,6 +1,7 @@
 import WebFooter from "./components/webfooter";
-import WebHeader from "./components/webheader";
 import WebMain from "./components/webmain";
+import WebHeader from "./components/webheader";
+
 
 
 const Website = () =>{

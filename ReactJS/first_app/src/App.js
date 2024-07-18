@@ -28,9 +28,9 @@ function App(){
     let newMultiply = multiply*2;
     setMultiply(newMultiply);
   }
-
   return(
     <div>
+      <Header/>
       {/* <Header title="Kavibharathi" priority="high"/>
       <Header title="Qtree Tech" priority="low"/>
         Hello, {myName} - {count}
@@ -42,6 +42,7 @@ function App(){
         <Footer callback={printMyName}/> */}
         <Website/>
       </div>
+      
   )
 }
 
