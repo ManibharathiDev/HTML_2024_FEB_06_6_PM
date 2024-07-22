@@ -38,11 +38,37 @@
 }
 
 .products{
-  width:35%;
+  width:80%;
   margin:0 auto;
 }
 
 .myProducts{
   border:1px solid gray;
   padding: 10px;
+}
+
+.row{
+  width: 100%;
+  display: flex;
+}
+
+.cols{
+  padding:10px;
+  margin:10px;
+  height:auto;
+  border:1px solid #282c34;
+  
+}
+
+.colss{
+  width: 16.55%;
+  padding:10px;
+  margin:10px;
+  height:auto;
+  border:1px solid #282c34;
+  float:left;
+}
+
+.productPrice{
+  font-size: 15px;
 }
