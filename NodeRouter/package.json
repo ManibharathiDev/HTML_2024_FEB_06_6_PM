@@ -1,0 +1,22 @@
+{
+  "name": "node_router",
+  "version": "1.0.0",
+  "description": "Router for Node JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "router_test"
+  },
+  "keywords": [
+    "Node",
+    "Router",
+    "Communication",
+    "crud",
+    "mysql"
+  ],
+  "author": "Kavibharathi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  }
+}
